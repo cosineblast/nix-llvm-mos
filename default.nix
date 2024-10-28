@@ -5,11 +5,9 @@ pkgs.stdenv.mkDerivation  rec {
     pname = "llvm-mos-sdk";
     version = "9.0.1";
     src = pkgs.fetchurl {
-        url = "https://github.com/llvm-mos/llvm-mos-sdk/releases/latest/download/llvm-mos-linux.tar.xz";
-        hash = "sha256-kcNlUtHBo6bRrFYuGdkJtlHCOzhbS+tcdL8RR9d1i28=";
+        url = "https://github.com/llvm-mos/llvm-mos-sdk/releases/download/v20.2.0/llvm-mos-linux.tar.xz";
+        hash = "sha256-sObbnNChtVeQ2xE9HFaL/+DWL+TwD3CxoZ4Wsy/G3Pc=";
     };
-
-
 
     installPhase = ''
         runHook preInstall
